@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "content-hash": "b61db4247c23cc26aaafcb4f39511d56",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -509,6 +509,59 @@
                 "storage"
             ],
             "time": "2017-08-06T17:41:04+00:00"
+        },
+        {
+            "name": "leyo/rapidussd",
+            "version": "v1.0.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/le-yo/rapidussd.git",
+                "reference": "b0f57497d51bc17859334c190ade63398d4363fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/le-yo/rapidussd/zipball/b0f57497d51bc17859334c190ade63398d4363fb",
+                "reference": "b0f57497d51bc17859334c190ade63398d4363fb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "leyo\\rapidussd\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leonard Korir",
+                    "email": "leo@devs.mobi",
+                    "homepage": "http://devs.mobi",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Rapid ussd package for quick ussd development and prototyping",
+            "homepage": "https://github.com/leyo/rapidussd",
+            "keywords": [
+                "Rapidussd",
+                "ussd"
+            ],
+            "time": "2017-01-19T15:18:05+00:00"
         },
         {
             "name": "monolog/monolog",
