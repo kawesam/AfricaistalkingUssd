@@ -264,26 +264,42 @@ class UssdController extends Controller
 
     public function infoMiniApp($user,$menu){
 
-        echo "infoMiniAppbased on menu_id";
-        exit;
+        //echo "infoMiniAppbased on menu_id";
+        //exit;
 
         switch ($menu->id) {
-            case 4:
+            case 2:
                 //get the loan balance
+                $response = "Your account balance is 150,000";
+//                $sendtext = new SmsController();
+//                $sendtext->SendSms($user->phone,$response);
+                self::sendResponse($response,3,$user);
+                break;
 
+            case 3:
+                $response = "Apply for a loan";
+                self::sendResponse($response,3,$user);
+                break;
+                break;
+            case 4:
+                $response = "Send to Mpesa amount";
+                self::sendResponse($response,3,$user);
                 break;
             case 5:
-
+                $response = "Below is your mini statement";
+                self::sendResponse($response,3,$user);
                 break;
             case 6:
-
+                $response = "Call this number for assistance : 07XXXXXXXX";
+                self::sendResponse($response,3,$user);
+                break;
             default :
-                $response = $menu->confirmation_message;
+                //$response = $menu->confirmation_message;
 
-                $notify = new NotifyController();
+                //$notify = new NotifyController();
                 //$notify->sendSms($user->phone_no,$response);
                 //self::resetUser($user);
-                self::sendResponse($response,2,$user);
+                //self::sendResponse($response,2,$user);
 
                 break;
         }

@@ -26,7 +26,7 @@ class MenusTableSeeder extends Seeder
             array(
                 'title' => 'Account Balance',
                 'is_parent' => 0,
-                'type' => 2,
+                'type' => 3,
                 'confirmation_message' => "",
             ),
             array(
@@ -38,19 +38,19 @@ class MenusTableSeeder extends Seeder
             array(
                 'title' => 'Send to Mpesa',
                 'is_parent' => 0,
-                'type' => 1,
+                'type' => 3,
                 'confirmation_message' => "",
             ),
             array(
                 'title' => 'Get account mini-statement',
                 'is_parent' => 0,
-                'type' => 2,
+                'type' => 3,
                 'confirmation_message' => "",
             ),
             array(
                 'title' => 'Help',
                 'is_parent' => 0,
-                'type' => 1,
+                'type' => 3,
                 'confirmation_message' => "",
             ),
 //            array(
