@@ -1,6 +1,6 @@
 <?php
 
-namespace leyo\rapidussd\Http\Controllers;
+namespace app\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -155,7 +155,7 @@ class UssdController extends Controller
             if (self::postUssdConfirmationProcess($user)) {
                 $response = $menu->confirmation_message;
             } else {
-                $response = "We had a problem processing your request. Please contact Watu Credit Customer Care on 0790 000 999";
+                $response = "We had a problem processing your request. Please contact Watu Credit Customer Care on 07";
             }
 
             self::resetUser($user);
